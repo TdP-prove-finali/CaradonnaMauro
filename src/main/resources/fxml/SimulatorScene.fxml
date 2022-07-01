@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.provaLaurea.FXMLSimulatorController">
+   <center>
+      <VBox minHeight="600.0" minWidth="600.0" prefHeight="600.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#goMenu" text="&lt;">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label text="SIMULATOR">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="200.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Enter the bill of materials">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin></Label>
+                  <RadioButton fx:id="bomFileButton" mnemonicParsing="false" onAction="#handleBomFileButton" text=" by file">
+                     <HBox.margin>
+                        <Insets left="151.0" top="5.0" />
+                     </HBox.margin></RadioButton>
+                  <RadioButton fx:id="bomManuallyButton" mnemonicParsing="false" onAction="#handleBomManuallyButton" text="manually">
+                     <HBox.margin>
+                        <Insets left="50.0" top="5.0" />
+                     </HBox.margin></RadioButton>
+                  <RadioButton fx:id="bomDbButton" mnemonicParsing="false" onAction="#handleBomDbButton" text="by DB">
+                     <HBox.margin>
+                        <Insets left="20.0" top="5.0" />
+                     </HBox.margin></RadioButton>
+                  <Button fx:id="bomEnterButton" mnemonicParsing="false" onAction="#handleBomEnterButton" text="Enter">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <TextField fx:id="bomIdText" promptText="ItemId" />
+                  <TextField fx:id="bomQuantityText" promptText="Quantity">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin></TextField>
+                  <ComboBox fx:id="bomCmb" prefWidth="150.0" />
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Enter the probabilities by item">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin></Label>
+                  <RadioButton fx:id="probabilityFileButton" mnemonicParsing="false" onAction="#handleProbabilityFileButton" text=" by file">
+                     <HBox.margin>
+                        <Insets left="120.0" top="5.0" />
+                     </HBox.margin></RadioButton>
+                  <RadioButton fx:id="probabilityManuallyButton" mnemonicParsing="false" onAction="#handleProbabilityManuallyButton" text="manually">
+                     <HBox.margin>
+                        <Insets left="50.0" top="5.0" />
+                     </HBox.margin></RadioButton>
+                  <RadioButton fx:id="probabilityAllItemsButton" mnemonicParsing="false" onAction="#handleProbabilityAllItemsButton" text="for all items">
+                     <HBox.margin>
+                        <Insets left="20.0" top="5.0" />
+                     </HBox.margin></RadioButton>
+                  <Button mnemonicParsing="false" onAction="#handleProbabilityEnterButton" text="Enter">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <TextField fx:id="probabilityIdText" promptText="ItemId" />
+                  <TextField fx:id="delayText" promptText="Delay probability">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin></TextField>
+                  <TextField fx:id="annulmentText" promptText="Annulment probability">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin></TextField>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Enter a trend by item">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin></Label>
+                  <RadioButton fx:id="trendFileButton" mnemonicParsing="false" onAction="#handleTrendFileButton" text=" by file">
+                     <HBox.margin>
+                        <Insets left="164.0" top="5.0" />
+                     </HBox.margin></RadioButton>
+                  <RadioButton fx:id="trendManuallyButton" mnemonicParsing="false" onAction="#handleTrendManuallyButton" text="manually">
+                     <HBox.margin>
+                        <Insets left="50.0" top="5.0" />
+                     </HBox.margin></RadioButton>
+                  <RadioButton fx:id="trendAllItemsButton" mnemonicParsing="false" onAction="#handleTrendAllItemsButton" text="for all items">
+                     <HBox.margin>
+                        <Insets left="20.0" top="5.0" />
+                     </HBox.margin></RadioButton>
+                  <Button mnemonicParsing="false" onAction="#handleTrendEnterButton" text="Enter">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <TextField fx:id="trendIdText" promptText="ItemId" />
+                  <TextField fx:id="trendDateText" promptText="Date">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin></TextField>
+                  <TextField fx:id="trendPriceText" promptText="Value">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin></TextField>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Enter start date">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="dayText" prefWidth="60.0" promptText="Day">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin></TextField>
+                  <Label text="-">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="monthText" prefWidth="60.0" promptText="Month" />
+                  <Label text="-">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="yearText" prefHeight="25.0" prefWidth="60.0" promptText="Year" />
+                  <Button mnemonicParsing="false" onAction="#handleStartDateButton" text="Enter">
+                     <HBox.margin>
+                        <Insets left="165.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <TextArea fx:id="txtArea" prefHeight="50.0" prefWidth="620.0">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </TextArea>
+            <HBox>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleSimulation" text="Start Simulation">
+                     <HBox.margin>
+                        <Insets left="240.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#handleReset" text="Reset">
+                     <HBox.margin>
+                        <Insets left="220.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="5.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="The sale date will be : ">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="finalDateText" editable="false">
+                     <HBox.margin>
+                        <Insets left="152.0" />
+                     </HBox.margin></TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="The total purchase price of all materials : ">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="totalPriceText" editable="false">
+                     <HBox.margin>
+                        <Insets left="62.0" />
+                     </HBox.margin></TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <TableView fx:id="simulatorTable" prefHeight="200.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <columns>
+                  <TableColumn fx:id="columnDate" prefWidth="75.0" text="Date" />
+                  <TableColumn fx:id="columnEventType" prefWidth="75.0" text="Event type" />
+                  <TableColumn fx:id="columnItem" prefWidth="75.0" text="Item">
+                     <columns>
+                        <TableColumn fx:id="columnItemId" prefWidth="75.0" text="Item id" />
+                        <TableColumn fx:id="columnArrivalDate" prefWidth="75.0" text="Arrival date" />
+                        <TableColumn fx:id="columnLotId" prefWidth="75.0" text="Lot id" />
+                        <TableColumn fx:id="columnPrice" prefWidth="75.0" text="Price" />
+                        <TableColumn fx:id="columnItemState" prefWidth="75.0" text="Item state" />
+                        <TableColumn fx:id="columnQuantity" prefWidth="75.0" text="Quantity" />
+                     </columns>
+                  </TableColumn>
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

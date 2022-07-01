@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.provaLaurea.FXMLCVAnalysisController">
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#goMenu" text="&lt;">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label text="COST VARIANCE ANALYSIS">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="150.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="Search cost variance row : ">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin></Label>
+                  <TextField fx:id="txtSearch" onKeyPressed="#handleSearch" />
+                  <Button mnemonicParsing="false" onAction="#handleSearchButton" text="Search" />
+               </children>
+            </HBox>
+            <TableView fx:id="CVTables" prefHeight="400.0">
+              <columns>
+                <TableColumn fx:id="fieldColumn" editable="false" prefWidth="220.0" text="Item" />
+                  <TableColumn fx:id="descriptionColumn" editable="false" prefWidth="280.0" text="Description" />
+                <TableColumn fx:id="totalColumn" editable="false" prefWidth="65.0" text="Total" />
+                  <TableColumn fx:id="avgCVColumn" editable="false" prefWidth="65.0" text="AvgCV" />
+                  <TableColumn fx:id="avgPercCVColumn" editable="false" prefWidth="65.0" text="AvgCV%" />
+                  <TableColumn fx:id="lastCVColumn" editable="false" prefWidth="65.0" text="LastCV" />
+                  <TableColumn fx:id="lastPercCVColumn" editable="false" prefWidth="65.0" text="LastCV%" />
+              </columns>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TableView>
+            <HBox>
+               <children>
+                  <Label text="View Cost Variance By">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin></Label>
+                  <ComboBox fx:id="fieldCmbBox" onAction="#handleDisable" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></ComboBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Button fx:id="showButton" mnemonicParsing="false" onAction="#handleShow" text="Show">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin></Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
