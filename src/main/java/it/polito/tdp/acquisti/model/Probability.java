@@ -1,4 +1,4 @@
-package it.polito.tdp.laurea.model;
+package it.polito.tdp.acquisti.model;
 
 public class Probability {
 	

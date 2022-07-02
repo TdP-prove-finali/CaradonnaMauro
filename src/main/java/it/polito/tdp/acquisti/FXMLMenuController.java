@@ -1,9 +1,9 @@
-package it.polito.tdp.laurea;
+package it.polito.tdp.acquisti;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import it.polito.tdp.laurea.model.Model;
+import it.polito.tdp.acquisti.model.Model;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

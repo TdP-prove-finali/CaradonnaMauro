@@ -1,4 +1,4 @@
-package it.polito.tdp.laurea;
+package it.polito.tdp.acquisti;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -11,19 +11,19 @@ import java.util.List;
 import java.util.Map;
 import java.util.ResourceBundle;
 
-import it.polito.tdp.laurea.model.CostVarianceData;
-import it.polito.tdp.laurea.model.Event;
-import it.polito.tdp.laurea.model.Item;
-import it.polito.tdp.laurea.model.Model;
-import it.polito.tdp.laurea.model.NewOrder;
-import it.polito.tdp.laurea.model.NotFoundPriceException;
-import it.polito.tdp.laurea.model.PriceTrend;
-import it.polito.tdp.laurea.model.Probability;
-import it.polito.tdp.laurea.model.Simulator;
-import it.polito.tdp.laurea.model.SimulatorItem;
-import it.polito.tdp.laurea.model.SimulatorRow;
-import it.polito.tdp.laurea.model.Event.EventType;
-import it.polito.tdp.laurea.model.SimulatorItem.State;
+import it.polito.tdp.acquisti.model.CostVarianceData;
+import it.polito.tdp.acquisti.model.Event;
+import it.polito.tdp.acquisti.model.Item;
+import it.polito.tdp.acquisti.model.Model;
+import it.polito.tdp.acquisti.model.NewOrder;
+import it.polito.tdp.acquisti.model.NotFoundPriceException;
+import it.polito.tdp.acquisti.model.PriceTrend;
+import it.polito.tdp.acquisti.model.Probability;
+import it.polito.tdp.acquisti.model.Simulator;
+import it.polito.tdp.acquisti.model.SimulatorItem;
+import it.polito.tdp.acquisti.model.SimulatorRow;
+import it.polito.tdp.acquisti.model.Event.EventType;
+import it.polito.tdp.acquisti.model.SimulatorItem.State;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

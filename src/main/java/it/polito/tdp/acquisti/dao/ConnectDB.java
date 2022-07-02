@@ -1,4 +1,4 @@
-package it.polito.tdp.laurea.dao;
+package it.polito.tdp.acquisti.dao;
 
 
 import java.sql.Connection;

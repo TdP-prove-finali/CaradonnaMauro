@@ -1,4 +1,4 @@
-package it.polito.tdp.laurea.dao;
+package it.polito.tdp.acquisti.dao;
 
 import java.time.LocalDate;
 import java.util.HashMap;
@@ -6,13 +6,13 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import it.polito.tdp.laurea.model.Buyer;
-import it.polito.tdp.laurea.model.CostVarianceRow;
-import it.polito.tdp.laurea.model.Invoice;
-import it.polito.tdp.laurea.model.Item;
-import it.polito.tdp.laurea.model.Model;
-import it.polito.tdp.laurea.model.Order;
-import it.polito.tdp.laurea.model.Supplier;
+import it.polito.tdp.acquisti.model.Buyer;
+import it.polito.tdp.acquisti.model.CostVarianceRow;
+import it.polito.tdp.acquisti.model.Invoice;
+import it.polito.tdp.acquisti.model.Item;
+import it.polito.tdp.acquisti.model.Model;
+import it.polito.tdp.acquisti.model.Order;
+import it.polito.tdp.acquisti.model.Supplier;
 
 public class TestDao {
 	

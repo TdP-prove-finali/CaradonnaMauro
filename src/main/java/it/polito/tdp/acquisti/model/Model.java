@@ -1,4 +1,4 @@
-package it.polito.tdp.laurea.model;
+package it.polito.tdp.acquisti.model;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -12,8 +12,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import it.polito.tdp.laurea.dao.OrderDao;
-import it.polito.tdp.laurea.model.SimulatorItem.State;
+import it.polito.tdp.acquisti.dao.OrderDao;
+import it.polito.tdp.acquisti.model.SimulatorItem.State;
 import javafx.util.Callback;
 
 public class Model {
@@ -515,8 +515,8 @@ public class Model {
 	
 	public void simulate() throws NotFoundPriceException {
 		
-		actual = dao.getAllWarehouse();
 		this.init(LocalDate.of(2022, 1, 1));
+		actual = dao.getAllWarehouse();
 		for(String s : this.bom.keySet()) {
 			if(!probabilities.containsKey(s))
 				probabilities.put(s, new Probability(0, 0));

@@ -1,9 +1,9 @@
-package it.polito.tdp.laurea;
+package it.polito.tdp.acquisti;
 
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 
-import it.polito.tdp.laurea.model.Model;
+import it.polito.tdp.acquisti.model.Model;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
