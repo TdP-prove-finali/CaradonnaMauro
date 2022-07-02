@@ -1,4 +1,4 @@
-package it.polito.tdp.provaLaurea;
+package it.polito.tdp.laurea;
 
 public class Main {
 	public static void main(String[] args) {

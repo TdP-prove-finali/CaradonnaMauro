@@ -1,4 +1,4 @@
-package it.polito.tdp.provaLaurea;
+package it.polito.tdp.laurea;
 
 import java.net.URL;
 import java.time.LocalDate;
@@ -8,14 +8,14 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.Set;
 
-import it.polito.tdp.provaLaurea.model.Buyer;
-import it.polito.tdp.provaLaurea.model.CostVarianceRow;
-import it.polito.tdp.provaLaurea.model.Invoice;
-import it.polito.tdp.provaLaurea.model.Item;
-import it.polito.tdp.provaLaurea.model.Model;
-import it.polito.tdp.provaLaurea.model.NewOrder;
-import it.polito.tdp.provaLaurea.model.Order;
-import it.polito.tdp.provaLaurea.model.Supplier;
+import it.polito.tdp.laurea.model.Buyer;
+import it.polito.tdp.laurea.model.CostVarianceRow;
+import it.polito.tdp.laurea.model.Invoice;
+import it.polito.tdp.laurea.model.Item;
+import it.polito.tdp.laurea.model.Model;
+import it.polito.tdp.laurea.model.NewOrder;
+import it.polito.tdp.laurea.model.Order;
+import it.polito.tdp.laurea.model.Supplier;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;

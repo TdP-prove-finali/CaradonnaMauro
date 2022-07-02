@@ -1,14 +1,14 @@
-package it.polito.tdp.provaLaurea;
+package it.polito.tdp.laurea;
 
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.ResourceBundle;
 
-import it.polito.tdp.provaLaurea.model.Buyer;
-import it.polito.tdp.provaLaurea.model.CostVarianceData;
-import it.polito.tdp.provaLaurea.model.CostVarianceRow;
-import it.polito.tdp.provaLaurea.model.Model;
+import it.polito.tdp.laurea.model.Buyer;
+import it.polito.tdp.laurea.model.CostVarianceData;
+import it.polito.tdp.laurea.model.CostVarianceRow;
+import it.polito.tdp.laurea.model.Model;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

@@ -1,4 +1,4 @@
-package it.polito.tdp.provaLaurea.model;
+package it.polito.tdp.laurea.model;
 
 public class Buyer {
 	

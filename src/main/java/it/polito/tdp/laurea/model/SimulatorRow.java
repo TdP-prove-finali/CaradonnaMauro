@@ -1,9 +1,9 @@
-package it.polito.tdp.provaLaurea.model;
+package it.polito.tdp.laurea.model;
 
 import java.time.LocalDate;
 
-import it.polito.tdp.provaLaurea.model.Event.EventType;
-import it.polito.tdp.provaLaurea.model.SimulatorItem.State;
+import it.polito.tdp.laurea.model.Event.EventType;
+import it.polito.tdp.laurea.model.SimulatorItem.State;
 
 public class SimulatorRow {
 	

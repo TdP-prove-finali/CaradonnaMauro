@@ -1,4 +1,4 @@
-package it.polito.tdp.provaLaurea.model;
+package it.polito.tdp.laurea.model;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -12,8 +12,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import it.polito.tdp.provaLaurea.dao.OrderDao;
-import it.polito.tdp.provaLaurea.model.SimulatorItem.State;
+import it.polito.tdp.laurea.dao.OrderDao;
+import it.polito.tdp.laurea.model.SimulatorItem.State;
 import javafx.util.Callback;
 
 public class Model {
@@ -100,13 +100,16 @@ public class Model {
 	 */
 	private void uploadRepetitiveness(LocalDate modelDate){
 		for(Order o : orderMap.values()){
-			if(o.getInvoice().getInvoiceDate().getYear() < modelDate.getYear() && o.getInvoice().getInvoiceDate().getYear() > (modelDate.getYear() - 2)){
-				o.getItem().setPreviouslyPurchased(true);
-				this.pastPeriodOrderMap.put(o.getOrderId(), o);
-			} else{
-				o.getItem().setCurrentlyPurchased(true);
-				this.currentPeriodOrderMap.put(o.getOrderId(), o);  
+			if(o.getInvoice() != null) {
+				if(o.getInvoice().getInvoiceDate().getYear() < modelDate.getYear() && o.getInvoice().getInvoiceDate().getYear() > (modelDate.getYear() - 2)){
+					o.getItem().setPreviouslyPurchased(true);
+					this.pastPeriodOrderMap.put(o.getOrderId(), o);
+				} else{
+					o.getItem().setCurrentlyPurchased(true);
+					this.currentPeriodOrderMap.put(o.getOrderId(), o);  
+				}
 			}
+			
 		}
 	}
 	

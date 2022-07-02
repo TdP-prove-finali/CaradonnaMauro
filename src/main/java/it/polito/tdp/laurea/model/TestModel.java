@@ -1,4 +1,4 @@
-package it.polito.tdp.provaLaurea.model;
+package it.polito.tdp.laurea.model;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import it.polito.tdp.provaLaurea.model.SimulatorItem.State;
+import it.polito.tdp.laurea.model.SimulatorItem.State;
 
 public class TestModel {
 

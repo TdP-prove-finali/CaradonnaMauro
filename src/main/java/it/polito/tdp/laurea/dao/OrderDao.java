@@ -1,4 +1,4 @@
-package it.polito.tdp.provaLaurea.dao;
+package it.polito.tdp.laurea.dao;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -14,14 +14,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import it.polito.tdp.provaLaurea.model.Buyer;
-import it.polito.tdp.provaLaurea.model.Invoice;
-import it.polito.tdp.provaLaurea.model.Item;
-import it.polito.tdp.provaLaurea.model.Order;
-import it.polito.tdp.provaLaurea.model.PriceTrend;
-import it.polito.tdp.provaLaurea.model.SimulatorItem;
-import it.polito.tdp.provaLaurea.model.Supplier;
-import it.polito.tdp.provaLaurea.model.SimulatorItem.State;
+import it.polito.tdp.laurea.model.Buyer;
+import it.polito.tdp.laurea.model.Invoice;
+import it.polito.tdp.laurea.model.Item;
+import it.polito.tdp.laurea.model.Order;
+import it.polito.tdp.laurea.model.PriceTrend;
+import it.polito.tdp.laurea.model.SimulatorItem;
+import it.polito.tdp.laurea.model.Supplier;
+import it.polito.tdp.laurea.model.SimulatorItem.State;
 
 
 public class OrderDao {

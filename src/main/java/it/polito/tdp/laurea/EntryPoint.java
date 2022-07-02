@@ -1,9 +1,9 @@
-package it.polito.tdp.provaLaurea;
+package it.polito.tdp.laurea;
 
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 
-import it.polito.tdp.provaLaurea.model.Model;
+import it.polito.tdp.laurea.model.Model;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;

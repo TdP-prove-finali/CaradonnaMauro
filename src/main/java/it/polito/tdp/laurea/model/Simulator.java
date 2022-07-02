@@ -1,4 +1,4 @@
-package it.polito.tdp.provaLaurea.model;
+package it.polito.tdp.laurea.model;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
 
-import it.polito.tdp.provaLaurea.model.Event.EventType;
-import it.polito.tdp.provaLaurea.model.SimulatorItem.State;
+import it.polito.tdp.laurea.model.Event.EventType;
+import it.polito.tdp.laurea.model.SimulatorItem.State;
 
 public class Simulator {
 	

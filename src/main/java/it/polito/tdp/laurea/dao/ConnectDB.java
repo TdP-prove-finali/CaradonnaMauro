@@ -1,4 +1,4 @@
-package it.polito.tdp.provaLaurea.dao;
+package it.polito.tdp.laurea.dao;
 
 
 import java.sql.Connection;

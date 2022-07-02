@@ -1,4 +1,4 @@
-package it.polito.tdp.provaLaurea.model;
+package it.polito.tdp.laurea.model;
 
 import java.time.LocalDate;
 import java.util.Objects;
