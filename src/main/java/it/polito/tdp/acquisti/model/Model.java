@@ -764,7 +764,7 @@ public class Model {
 	}
 
 	public String getSimulatorTotalPrice() {
-		return simulator.getTotalPrice() + "€";
+		return   Math.round(simulator.getTotalPrice()*100)/100.0 + "€";
 	}
 
 	public void reset() {
